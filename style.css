@@ -7,7 +7,7 @@ body{
 }
 
 #p1{
-
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px; 
 }
@@ -18,7 +18,17 @@ body{
     background-color: tomato;
     border-radius: 30px;
     text-shadow: 3px 3px 5px yellow, -3px -3px 5px red;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    display:flex;
+}
 
+.intro{
+    display: inline-block;
+    padding-top: 10px;
+    
 }
 
 #h1{
@@ -43,40 +53,51 @@ body{
 #logo{
     border: 3px solid black;
     border-radius: 20px;
+    animation-name: rotate;
+    animation-duration: 1s;
+
 }
 
-#h2_rizz{
+.top_bar{
+    display: flex;
+    border: 4px solid black;
     border-radius: 20px;
-    border: 3px solid black;
     background-color: tomato;
+    justify-content:center;
 }
+
 
 #gif1_rizz{
     float: right;
-    margin-left: 4px;
-    margin-bottom: 4px;
+    margin: 4px;
+    padding-left:4px;
 }
 
-#ski_home_button{
-    font-size: 15px;
-    background-color: yellow;
-    border: 3px solid black;
-    border-radius: 15px;
-    
+#h2_rizz{
+    text-shadow: 3px 3px 5px yellow, -3px -3px 5px red;
+    padding-right: 70px;
 }
 
-#ski_home_button:hover{
-    background-color: red;
-    font-size: 20px;
-    cursor: pointer;
+.nav_bar a.link:hover{
+    list-style-type: none;
+    background-color: rgba(255, 140, 0, 0.769);
 }
 
 .nav_bar ul{
+    border: 3px solid black;
+    border-radius: 20px;
     list-style-type: none;
     background-color: bisque;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    display:flex;
 }
 
 .nav_bar a.link{
@@ -89,7 +110,83 @@ body{
     margin: 0px;
 }
 
-.nav_bar a.link:hover{
-    background-color: cadetblue;
+
+@media screen and (max-width:600px){
+    header.head1{
+        width: 100%;
+        
+    }
+}
+
+
+@keyframes rotate{
+    from{transform: rotateX(360deg);}
+}
+
+@keyframes rotateY{
+    from{transform: rotateY(360deg);}
+}
+
+#about_us{
+    text-align: justify;
+    padding:10px;
+    font-style: "Times New Roman";
+}
+
+#head2{
+    padding:10px;
+    text-align: center;
+    background-color: blanchedalmond;
+    display: block;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: auto;
+    width:fit-content;
+}
+#about_us{
+    font-size: 25px;
+}
+#goo_img{
+    width: 150px;
+    float: right;
+    margin: 4px;
+    padding: 4px;
+}
+
+#BWL_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    text-align: center;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: teal;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#BWL_title{
+    color: brown;
+}
+
+#barrier{
+    height: 50px;
+    animation-name: rotateY; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#BWL{
+    font-size: 50px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: azure;
+    list-style-type:none;
     
 }

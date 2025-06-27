@@ -6,9 +6,90 @@ body{
     color: red;
 }
 
+#p1{
 
-.link{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+}
 
+#head1{
+
+    border: 4px solid black;
+    background-color: tomato;
+    border-radius: 30px;
+    text-shadow: 3px 3px 5px yellow, -3px -3px 5px red;
+
+}
+
+#h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#h4{
+    margin-top: 3px;
+    font-family: Impact;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+#box1{
+    width: 250px;
+    box-shadow: 4px 4px 5px black;
+    border: 2px solid black;
+}
+
+#logo{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#h2_rizz{
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: tomato;
+}
+
+#gif1_rizz{
+    float: right;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+#ski_home_button{
+    font-size: 15px;
     background-color: yellow;
+    border: 3px solid black;
+    border-radius: 15px;
+    
+}
 
+#ski_home_button:hover{
+    background-color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav_bar ul{
+    list-style-type: none;
+    background-color: bisque;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.nav_bar a.link{
+    color: rgb(185, 36, 36);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    float: left;
+    margin: 0px;
+}
+
+.nav_bar a.link:hover{
+    background-color: cadetblue;
+    
 }

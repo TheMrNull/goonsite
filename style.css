@@ -111,14 +111,14 @@ body{
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:420px){
     header.head1{
-        width: 100%;
+        width: 150%;
         
     }
 }
 
-
+/* This is where the animations are stored */
 @keyframes rotate{
     from{transform: rotateX(360deg);}
 }
@@ -126,6 +126,18 @@ body{
 @keyframes rotateY{
     from{transform: rotateY(360deg);}
 }
+
+@keyframes colorchange{
+    0%{color:red}
+    20%{color:yellow}
+    40%{color:lime}
+    60%{color:cyan}
+    80%{color:violet}
+    100%{color:rgb(255, 0, 255)}
+}
+
+
+/* End of this is where the animations are stored */
 
 #about_us{
     text-align: justify;
@@ -189,4 +201,94 @@ body{
     background-color: azure;
     list-style-type:none;
     
+}
+
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: linear-gradient(to right, tomato, blanchedalmond);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.container{
+    margin: 0 15px;
+}
+
+.form_box{
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    border: 3px solid black;
+    display: none;
+}
+
+
+.form_box.active{
+    display: block;
+}
+
+.logh{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.log_in,
+.gender{
+    width: 100%;
+    padding: 12px;
+    background-color: tomato;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size:16px;
+    color:rgb(255, 238, 0) ;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+#log_in_button{
+    width: 100%;
+    padding: 12px;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+
+#log_in_button:hover{
+    background-color: rgba(29, 71, 148, 0.706);
+}
+
+.no_acc{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.no_acc a{
+     color: rgb(172, 5, 5);
+     text-decoration: none;
+}
+
+.no_acc a:hover{
+    text-decoration: underline;
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size: 20px;
 }

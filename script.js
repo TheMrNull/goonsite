@@ -6,7 +6,7 @@ function showForm(formId){
 
 // Countdown code inside a function to avoid conflicts
 function startCountdown() {
-  const targetDate = new Date("2025-06-30T08:40:00").getTime();
+  const targetDate = new Date("2025-07-02T07:50:00").getTime();
   const countdownElement = document.getElementById("countdown");
 
   function updateCountdown() {

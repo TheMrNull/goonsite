@@ -172,6 +172,16 @@ body{
 }
 
 
+@keyframes premium{
+    0%{border-color: red;}
+    20%{border-color: lime;}
+    40%{border-color: yellow;}
+    60%{border-color: rgb(255, 55, 255);}
+    80%{border-color: rgb(0, 145, 255);}
+    100%{border-color: rgb(255, 98, 0);}
+}
+
+
 /* End of this is where the animations are stored */
 
 #about_us{
@@ -405,4 +415,53 @@ body{
     border-radius: 10px;
     transition: left 0.7s, top 0.7s;
     pointer-events: auto; /* allow interaction if you want */
+}
+
+#pfp{
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 200px;
+    animation-name: premium;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    padding: 3px;
+    margin: 4px;
+}
+
+.login{
+    
+    margin:20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    display:flex;
+    border: 3px solid black;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.log_info h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-name: colorchange;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.log_info h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.GPD_body{
+    margin: 10px;
+    text-align: justify;
+
+}
+
+#GPD_quote{
+    font-style: italic;
+    float: right;
 }

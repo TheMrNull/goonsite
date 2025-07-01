@@ -130,3 +130,22 @@ window.onload = () => {
   startMovement();
   startMemeMovement();
 };
+
+
+
+function updateDayCounter() {
+    const startDate = new Date("2025-06-28"); // Change to your desired start date
+    const now = new Date();
+
+    // Calculate difference in milliseconds
+    const timeDifference = now - startDate;
+
+    // Convert milliseconds to full days
+    const daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    const dayCounterElement = document.getElementById("dayCounter");
+    dayCounterElement.textContent = `${daysPassed + 1} days`;
+}
+
+// Run on page load
+window.addEventListener('DOMContentLoaded', updateDayCounter);
